@@ -1,0 +1,9 @@
+﻿import arcpy
+arcpy.GetInstallInfo()
+print ("hello world")
+arcpy.GetCount_management('County')
+arcpy.MakeFeatureLayer_management("C:\\Users\\hanfordca\\Documents\\GitHub\\python-programming-spring-2020\\Week 2\\data\\Missouri.gdb\\Roads", "carters_county_layer")
+arcpy.CopyFeatures_management('County', "Lincoln_County")
+arcpy.Clip_analysis('carters_county_layer', 'Lincoln_County', 'Lincoln_County_Roads')
+arcpy.Buffer_analysis('Lincoln_County_Roads', 'Lincoln_County_Roads_Buffer', '10 kilometers')
+arcpy.Buffer_analysis('Lincoln_County_Roads',"C:\\Users\\hanfordca\\Documents\\GitHub\\python-programming-spring-2020\\Week 2\\data\\Missouri.gdb\\Lincoln_County_Roads_Buffer", '10 kilometers')
