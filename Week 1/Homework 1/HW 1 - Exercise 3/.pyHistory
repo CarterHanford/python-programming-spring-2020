@@ -1,0 +1,8 @@
+﻿a = 12
+b = 5
+a*b
+count = arcpy.G
+count = (arcpy.G)
+count = "arcpy.G"
+count = arcpy.GetCount_management('zipcodes')
+print (count)
