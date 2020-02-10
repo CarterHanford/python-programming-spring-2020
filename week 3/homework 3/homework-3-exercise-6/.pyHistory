@@ -1,0 +1,28 @@
+﻿import arcpy from arcpy import env env.workspace = "C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06" shape_exists = arcpy.Exists("cities.shp") print shape_exists
+import arcpy from arcpy import env env.workspace = "C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06" shape_exists = arcpy.Exists("cities.shp") print (shape_exists)
+import arcpy
+from arcpy import env
+arcpy.env.workspace = "C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06"
+shape_exists = arcpy.Exists("cities.shp")
+print (shape_exists)
+import arcpy
+from arcpy import env
+env.workspace = r"C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06"
+shape_exists = arcpy.Exists("cities.shp")
+print (shape_exists)
+import arcpy
+from arcpy import env
+env.workspace = r"C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06"
+if arcpy.Exists("cities.shp"):     arcpy.CopyFeatures_management("cities.shp", "results/cities_copy.shp")
+myshape = arcpy.Describe("C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06\cities.shp")
+myshape = arcpy.Describe(r"C:\Users\hanfordca\Documents\GitHub\python-programming-spring-2020\week 3\data\Exercise06\cities.shp")
+myshape.dataType
+mylayer = arcpy.Describe("cities") mylayer.dataType
+mylayer.dataType
+mylayer.datasetType
+mylayer.catalogPath
+mylayer.basename
+mylayer.file
+mylayer.isVersioned
+mylayer.shapeType
+mylayer.spatialReference
