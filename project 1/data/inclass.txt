@@ -1,0 +1,5 @@
+Feature Class, Feature Count, Projection, Shape 
+School_District_Unified, 10887, GCS_North_American_1983, Polygon
+School_District_Secondary, 482, GCS_North_American_1983, Polygon
+School_District_Elementary, 1946, GCS_North_American_1983, Polygon
+State, 56, GCS_North_American_1983, Polygon
